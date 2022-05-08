@@ -15,4 +15,4 @@ for path in glob.glob("../VideoToFrame/output/*"):
         tens_l_orig, colorizer_siggraph17(tens_l_rs).cpu())
 
     plt.imsave('%s%s_siggraph.png' %
-               (os.getcwd()+"/output/", path[23:-4]), out_img_siggraph17)
+               ("../Remastering/model/output/", path[23:-4]), out_img_siggraph17)
